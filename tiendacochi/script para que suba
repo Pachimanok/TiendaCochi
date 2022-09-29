@@ -1,0 +1,21 @@
+<script>
+                    function multi(){
+		                var total = 0;
+                        var monto = $('.precio').val();
+                        $(".monto").each(function(){
+                            if (isNaN(parseFloat($(this).val()))) {
+                                total += 0;s
+                            } else {
+                            total += parseFloat($(this).val());
+                            }
+                        });
+	                    document.getElementById('Costo').innerHTML = total * monto;
+                        }
+                </script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>   
+                <input type="number" name="Precio" id="Precio" class="monto form-control" onkeyup="multi();">
+                <input type="hidden" name="Cantidad" id="Cantidad" class="precio" value="50" onkeyup="multi();">
+                    <label id="Costo">
+                      <input type="text" name="Costo" disabled>
+                    </label>
+                  

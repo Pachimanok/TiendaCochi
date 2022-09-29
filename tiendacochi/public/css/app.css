@@ -1,0 +1,83 @@
+
+h6{
+    color:#fc444c;
+}
+canvas{
+
+    width: 5rem !important;
+    height: 5rem !important;
+    margin-right: 0%;
+  
+  }
+canvas.ac{
+    width: 10rem !important;
+    height: 10rem !important;
+}
+
+canvas.anillos {
+    width: 9rem !important;
+    height: 9rem !important;
+    margin-right: 0%;
+    display: initial!important;
+    
+}
+canvas.barras{
+    width: inherit !important;
+    height: auto !important;    
+}
+.red-input:focus {
+    background: yellow;
+    color: red;
+  }
+
+  input.email-login{
+    border-left: none;border-top: none;
+    border-right: none; padding-top: 0; border-radius: 0;
+  }
+  input.password{
+    border-left: none;border-top: none;
+    border-right: none; padding-top: 0; border-radius: 0;
+  }
+  .check-group{
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  button.btn-login{
+    border-radius:50px;
+    width: 75%; 
+    border-color: aliceblue;
+    background: #af3636;
+    color: white;
+  }
+  a.btn-login{
+    border-radius:50px;
+    width: 75%; 
+    border-color: aliceblue;
+    background: #af3636;
+    color: white;
+  }
+  a.btn-forgot-password{
+    text-decoration-line: none;
+    color: gray;
+  }
+  input.register{
+    border-left: none;
+    border-top: none;
+    border-right: none; 
+    padding-top: 0; 
+    border-radius: 0;
+    margin-top: 0.4rem;
+    padding-left: 0;
+  }
+  h6.register{
+    text-align: left;
+    margin-bottom: 0%;
+    /* padding-left: 3%; */
+    color: #af3636;
+    font-size: small;
+  }
+
+  /* card */
+
+  
+
