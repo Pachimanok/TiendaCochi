@@ -10,7 +10,7 @@
                         style="width: 33%; background: #80808026 !important;" aria-valuenow="15" aria-valuemin="0"
                         aria-valuemax="100"></div>
                     <div class="progress-bar bg-warning" role="progressbar"
-                        style="width: 33%;  background: #af3636 !important;" aria-valuenow="30" aria-valuemin="0"
+                        style="width: 33%;  background: ##ff5765 !important;" aria-valuenow="30" aria-valuemin="0"
                         aria-valuemax="100"></div>
                     <div class="progress-bar bg-white" role="progressbar"
                         style="width: 33% ;background: #80808026 !important;" aria-valuenow="20" aria-valuemin="0"
@@ -21,7 +21,7 @@
     </div>
 
 
-    <h3 class="text-center" style="color: #af3636">¡Bienvenido {{ $user }}!</h3>
+    <h3 class="text-center" style="color: ##ff5765">¡Bienvenido {{ $user }}!</h3>
     <p class="text-center text-secondary pl-5 pr-5">Por favor, necesitamos que nos indiques los siguientes datos para
         facturar:</p>
     <form method="POST" action="facturacion">
@@ -30,7 +30,7 @@
             <div class="col-sm-8 mx-auto" style="padding-left: 4rem; padding-right:
                             4rem;">
                 <h6 style="text-align: left; margin-bottom:
-                                0%; padding-left: 3%; color:#af3636;">Razón Social:
+                                0%; padding-left: 3%; color:##ff5765;">Razón Social:
                 </h6>
                 <input id="text" type="text" class="form-control email-login" placeholder="Mi Empresa SA" name="razon_social"
                     value="{{ old('text') }}" required autocomplete="text">
@@ -40,7 +40,7 @@
             <div class="col-sm-8 mx-auto" style="padding-left: 4rem; padding-right:
                             4rem;">
                 <h6 style="text-align: left; margin-bottom:
-                                0%; padding-left: 3%; color:#af3636;">CUIT:
+                                0%; padding-left: 3%; color:##ff5765;">CUIT:
                 </h6>
                 <input id="cuit" type="number" class="form-control password" placeholder="30715400220" name="cuit" value="{{ old('cuit') }}"
                     required autocomplete="cuit">
@@ -50,7 +50,7 @@
             <div class="col-sm-8 mx-auto" style="padding-left: 4rem; padding-right:
                             4rem;">
                 <h6 style="text-align: left; margin-bottom:
-                                0%; padding-left: 3%; color:#af3636;">Condicion Fiscal:
+                                0%; padding-left: 3%; color:##ff5765;">Condicion Fiscal:
                 </h6>
                 <select name="cond_fiscal[]" class="form-control" style="border-left:none; border-right:none; border-top:none;"id="">
                     <option value="" style="color:gray;">-.seleccionar.-</option>
@@ -65,7 +65,7 @@
 
         <div class="row mt-3 text-center">
             <div class="col-md-8 mx-auto">
-                <button type="submit" class="btn btn-primary btn-login" style="border-radius:50px;width: 75%; background: #af3636;
+                <button type="submit" class="btn btn-primary btn-login" style="border-radius:50px;width: 75%; background: ##ff5765;
                     color: white;">
                     Continuar
                 </button>

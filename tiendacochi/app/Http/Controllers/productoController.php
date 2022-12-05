@@ -93,6 +93,7 @@ class productoController extends Controller
         $producto = new product;
         $producto->titulo = $request['titulo'];
         $producto->sub_titulo = $request['sub_titulo'];
+        $producto->description = $request['description'];
         $producto->precio = $request['precio'];
         $producto->detalle = $request['detalle'];
         $producto->estado = $estado;

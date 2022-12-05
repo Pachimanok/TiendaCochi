@@ -2,7 +2,7 @@
 @extends('layouts.flash-message')
 <img src="http://rail.com.ar/50OFF.gif" alt="" class="img-fluid">
 <div class="container pl-3 mt-4 ">
-    <img src="{{asset('assets/img/homeWine.svg')}}" style="    width: -webkit-fill-available;
+    <img src="{{asset('assets/img/homeCochi.jpg')}}" style="    width: -webkit-fill-available;
     margin-top: 3rem;" alt="">
     <div class="d-grid gap-2">
         <a href="/catalogo" class="btn btn-danger mb-5 mt-5" style="border-radius:50px; background:linear-gradient(90deg, rgba(255,88,90,1) 35%, rgba(248,87,166,1) 100%);padding: 1rem;">HACER UN
@@ -21,7 +21,7 @@
             -moz-box-shadow: -2px 12px 25px -10px rgba(0,0,0,0.55);border-radius: 10px 10px 10px 10px;
             margin-bottom:1rem;
             ">
-                <div class="d-flex" style="background:#af3636; border-radius: 10px 10px 0 0;">
+                <div class="d-flex" style="background:##ff5765; border-radius: 10px 10px 0 0;">
                     <div class="col align-middle">
                         <h5 class="text-white mt-2" style="margin-left: 1rem;"> Pedido #00{{ $pedido->id }}</h5>
                     </div>
@@ -66,18 +66,18 @@
                     </p>
                     <div class="d-flex">
                         <div class="col text-end">
-                            <a href="pedido/{{ $pedido->id }}/view" class="btn " style="color:#af3636;border-right: 1px;
+                            <a href="pedido/{{ $pedido->id }}/view" class="btn " style="color:##ff5765;border-right: 1px;
                                 border: #d4c6c6;
                                 border-right-style: solid;"><i class="bi bi-file-earmark-text" style="margin-right:4px;"></i> Ver
                                         Pedido<a>                                   
                         </div>
                         <div class="col">
-                            <button class="btn" style="color: #af3636;" 
+                            <button class="btn" style="color: ##ff5765;" 
                             onclick="copiarAlPortapapeles('{{ $pedido->link_seguimiento }}');" @if ($pedido->seguimiento == null) disabled @endif><i
                                     class="fas fa-shipping-fast"></i> Seguir Pedido</button>                                    
                         </div>
                         <div class="col">
-                            <a href="pedido/{{ $pedido->id }}" class="btn " style="color:#af3636;border-left: 1px;
+                            <a href="pedido/{{ $pedido->id }}" class="btn " style="color:##ff5765;border-left: 1px;
                         border: #d4c6c6;
                         border-left-style: solid;"><i class="fas fa-redo-alt" style="margin-right:4px;"></i> Repetir
                                 Pedido<a>

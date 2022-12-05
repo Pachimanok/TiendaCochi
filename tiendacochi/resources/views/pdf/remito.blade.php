@@ -75,7 +75,7 @@
 <body>
     <div class="container">
         <div class="col">
-            <img src="https://cincosentidos.ar/public/assets/img/5s.png" style="width: 10rem;" alt="">
+            <img src="https://cincosentidos.ar/public/assets/img/bbc.png" style="width: 10rem;" alt="">
             <h1>REMITO</h1>
             <h6>DESTINATARIO FINAL</h6>
         </div>

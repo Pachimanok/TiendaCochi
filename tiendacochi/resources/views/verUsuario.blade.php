@@ -1,5 +1,5 @@
 @include('layouts.header') 
-    <div class="container pl-3 mt-4" style="background-color:#af3636 ;">
+    <div class="container pl-3 mt-4" style="background-color:##ff5765 ;">
     @include('layouts.flash-message')
             <div class="card card-body blur shadow-blur mx-1 mt-n6 overflow-hidden" >
                 <div class="row gx-4">

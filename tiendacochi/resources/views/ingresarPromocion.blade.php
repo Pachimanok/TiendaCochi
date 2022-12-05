@@ -4,7 +4,7 @@
                 <div class="modal-body p-0">
                     <div class="card card-plain">
                         <div class="card-header pb-0 text-left">
-                            <h3 class="font-weight-bolder  text-gradient" style="color: #af3636;">Ingresar Codigo de Descuento</h3>
+                            <h3 class="font-weight-bolder  text-gradient" style="color: ##ff5765;">Ingresar Codigo de Descuento</h3>
                         </div>
                         <div class="card-body">
                             <form action="/promocion/test" method="POST" role="form text-left"

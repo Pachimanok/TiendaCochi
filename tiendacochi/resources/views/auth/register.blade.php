@@ -5,7 +5,7 @@
             <div class="card" style="border:none; text-align: center;">
                 <div class="row">
                     <div class="col-sm-5 mx-auto mt-5 ">
-                        <img src="assets/img/5s.png" class="card-img-top
+                        <img src="assets/img/bbc.png" class="card-img-top
                                     img-fluid mb-5 mt-5" style="width: 12rem;" alt="..."><br>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="row mt-4 mb-5">
                         <div class="col-md-8 mx-auto">
-                            <button type="submit" class="btn btn-primary btn-login" style="border-radius:50px;width: 75%; background: #af3636;
+                            <button type="submit" class="btn btn-primary btn-login" style="border-radius:50px;width: 75%; background: ##ff5765;
                             color: white;">
                                 {{ __('Registrarme') }}
                             </button>

@@ -8,6 +8,8 @@
         <div class="col-sm-5 text-center text-primary mt-3 mx-auto">
             <h3 class="d-flex">Titulo<input type="text" name="titulo" class="form-control border-primary" style="margin-left: 1rem;" placeholder="El Viañatero" required></h3>
             <h3 class="d-flex">Subtitulo<input type="text" name="sub_titulo" class="form-control border-primary" style="margin-left: 1rem;" placeholder="Malbec 2020" required></h3>
+            <h3 class="d-flex">Descripcion:<input type="text" name="description" class="form-control border-primary" style="margin-left: 1rem;" placeholder="Rojo - Amarillo - Verde." required></h3>
+        
         </div>
         <div class="row">
             <div class="col-sm-5 mx-auto text-center">

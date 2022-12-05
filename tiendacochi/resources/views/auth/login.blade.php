@@ -5,7 +5,7 @@
             <div class="card" style="border:none; text-align: center;">
                 <div class="row">
                     <div class="col-sm-5 mx-auto mt-5 mb-3">
-                        <img src="assets/img/5s.png" class="card-img-top
+                        <img src="assets/img/bbc.png" class="card-img-top
                                     img-fluid mb-5 mt-5" style="width: 12rem;" alt="..."><br>
                     </div>
                 </div>
@@ -15,7 +15,7 @@
                         <div class="col-sm-8 mx-auto" style="padding-left: 4rem; padding-right:
                                     4rem;">
                             <h6 style="text-align: left; margin-bottom:
-                                        0%; padding-left: 3%; color:#af3636;">Email
+                                        0%; padding-left: 3%; color:##ff5765;">Email
                             </h6>
                             <input id="email" type="email" class="form-control email-login
                                         @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"
@@ -31,7 +31,7 @@
                         <div class="col-sm-8 mx-auto" style="padding-left: 4rem; padding-right:
                                     4rem;">
                             <h6 style="text-align: left; margin-bottom:
-                                        0%; padding-left: 3%; color:#af3636;">
+                                        0%; padding-left: 3%; color:##ff5765;">
                                 Password</h6>
                             <input id="password" type="password" class="form-control password @error('password')
                                         is-invalid @enderror" name="password" required autocomplete="current-password">
@@ -53,7 +53,7 @@
                     </div>
                     <div class="row mt-2">
                         <div class="col-md-8 mx-auto">
-                            <button type="submit" class="btn btn-primary btn-login" style="border-radius:50px;width: 75%; background: #af3636;
+                            <button type="submit" class="btn btn-primary btn-login" style="border-radius:50px;width: 75%; background: ##ff5765;
                             color: white;">
                                 {{ __('Ingresar') }}
                             </button>

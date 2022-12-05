@@ -4,7 +4,7 @@
            <h1 class="text-center">REMITO</h1>
         </td>
         <td width="50%" valign="top" class="tdContenido" style="text-align:center;">
-                <img src="https://cincosentidos.ar/public/assets/img/5s.png" style="width:7rem;" alt="">
+                <img src="https://cincosentidos.ar/public/assets/img/bbc.png" style="width:7rem;" alt="">
         </td>
     </tr>
 </table>    

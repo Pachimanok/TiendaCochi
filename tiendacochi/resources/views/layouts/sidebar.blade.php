@@ -4,7 +4,7 @@
 <div class="offcanvas offcanvas-start" tabindex="-1" style="max-width:
             60%;" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
-        <button type="button" class="btn-close text-reset" style="color:#af3636 !important;" data-bs-dismiss="offcanvas"
+        <button type="button" class="btn-close text-reset" style="color:##ff5765 !important;" data-bs-dismiss="offcanvas"
             aria-label="Close" name="Close"></button>
     </div>
     <div class="offcanvas-body">

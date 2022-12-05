@@ -14,7 +14,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CincoSentidos</title>
+    <title>BBC Tienda</title>
     <link rel="shortcut icon" href="{{ asset('assets/img/favicon/android-icon-36x36.png') }}">
 
 
@@ -137,7 +137,7 @@
 
                         <div class="col-sm-5 mx-auto mt-5 mb-3">
                             <h4 style="color: black; " class="mt-5">¡Bienvenido!</h4>
-                            <img src="assets/img/5s.png"
+                            <img src="assets/img/bbc.png"
                                 class="card-img-top
                                     img-fluid mb-5 mt-2 "
                                 style="width: 12rem;" alt="..."><br>

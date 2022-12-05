@@ -9,7 +9,7 @@
           <h2 class="text-success text-center p-0">¡Compra realizada correctamente!</h2>
           <p class="text-center pb-0 mb-0">Para terminar transferinos: <br><strong>$ {{ $total}}.00</strong></h5>  
           <br>  
-          <p class="text-center text-secondary mt-5 pb-0 mb-0">CBU: <span id="p1">0720068720000001574472</span>
+          <p class="text-center text-secondary mt-5 pb-0 mb-0">CVU: <span id="p1">0000007900233389032940</span>
           <br>
           <button class="btn text-secondary" onclick="copiarAlPortapapeles('p1')"><i id="colorp1" class="far fa-copy"></i></button></p> 
           <br>  

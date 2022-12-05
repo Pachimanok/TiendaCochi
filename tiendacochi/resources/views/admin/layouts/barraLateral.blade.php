@@ -130,7 +130,7 @@
         </li> --}}
       </ul>
       <div>
-        <a href="/logout" class="btn btn-danger mb-3 ms-5 position-absolute bottom-0 start-0" style="border-radius:50px; background: #af3636;">Cerrar sesión</a>
+        <a href="/logout" class="btn btn-danger mb-3 ms-5 position-absolute bottom-0 start-0" style="border-radius:50px; background: ##ff5765;">Cerrar sesión</a>
       </div>
     </div>
   </aside>

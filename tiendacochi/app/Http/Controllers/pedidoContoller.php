@@ -375,7 +375,7 @@ class pedidoContoller extends Controller
 
             foreach ($request->get('pago') as $pago);
 
-            foreach ($request['cond_fiscal'] as $cond_fiscal);
+            $cond_fiscal = $request['cond_fiscal'];
             $razon_social = $request['razon_social'];
             $cuit = $request['cuit'];
 
@@ -454,8 +454,9 @@ class pedidoContoller extends Controller
             }
         };
 
-        foreach ($request->get('facturacion') as $facturacion);
-        foreach ($request->get('direccion') as $direccion);
+        $facturacion = $request->get('facturacion');
+        $direccion = $request->get('direccion');
+        
         foreach ($request->get('pago') as $pago);
 
         $obs = $request['observaciones'];         

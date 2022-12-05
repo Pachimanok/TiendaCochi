@@ -21,7 +21,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="col-auto mx-auto">
-                                    <h6 style="color: #af3636;"> Subtotal:
+                                    <h6 style="color: ##ff5765;"> Subtotal:
                                         ${{ $articulo->precio }},00</h6>
                                 </div>
                             </div>
@@ -30,144 +30,53 @@
                     <form action="/pedido/{{ $id }}" method="POST" name="fvalida">
                         @method('PUT')
                         @csrf
-                        <div class="row mt-3">
-                            <h4 class="text-center">DATOS DE FACTURACIÓN:</h2>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12 mx-auto">
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Razón Social:*
-                                </h6>
-                                <input id="razon_social" type="text" class="form-control email-login"
-                                    placeholder="Mi Empresa SA" name="razon_social" value="{{ old('text') }}" required
-                                    autocomplete="text">
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-sm-12 mx-auto">
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">CUIT:*
-                                </h6>
-                                <input id="cuit" type="number" class="form-control password" placeholder="30715400220"
-                                    name="cuit" value="{{ old('cuit') }}" required autocomplete="cuit">
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-sm-12 mx-auto">
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Condición Fiscal:*
-                                </h6>
-                                <select name="cond_fiscal[]" class="form-control"
+                                <input type="hidden" 
+                                    name="razon_social" value="compraUnica" required
+                                   >
+                                <input  type="hidden" 
+                                    name="cuit" value="1111111111" required     >
+                                <input name="cond_fiscal" type="hidden" class="form-control" value="compraUnica"
                                     style="border-left:none; border-right:none; border-top:none;" id="cond_fiscal" require>
-                                    <option value="" style="color:gray;">-.seleccionar.-</option>
-                                    <option value="Exento">Exento</option>
-                                    <option value="Presupuesto">Presupuesto</option>
-                                    <option value="Consumidor Final">Consumidor Final</option>
-                                    <option value="Responsable Inscripto">Responsable Inscripto</option>
-                                    <option value="Responsable Monotributo">Responsable Monotributo</option>
-                                </select>
+                                   
                             </div>
                         </div>
-                        <div class="row mt-3">
-                            <h4 class="text-center">DATOS DE ENTREGA :</h2>
-                        </div>
-                    @if($retiroBodega == "retiroBodega")
-                    <div class="col" style="border-color:#000;">
-                        <h5 style="text-align: left; margin-bottom:0%; padding-left: 3%; color:#af3636;">
-                        <input class="form-check-input" type="checkbox" name="retiroBodega" id="retiroBodega" 
-                        value="retiroBodega" onchange="javascript:showContent()" checked> Retiro en bodega</h5>
-                    </div>
-                    @else
-                    <div id="content" style="display: block;">
-                        <div class="row">
-                            <div class="col-sm-12 mx-auto" >
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Calle:*
-                                </h6>
-                                <input id="text" type="text" class="form-control email-login"
-                                    placeholder="Av. San Martin" name="calle" value="{{ old('text') }}" 
+                        
+                    
+                    
+                               
+                                <input  type="hidden" class="form-control email-login"
+                                    placeholder="Av. San Martin" name="calle" value="compraUnica" 
                                     autocomplete="text">
-                            </div>
-                        </div>
-                        <div class="d-flex mt-3">
-                            <div class="col-sm-4 text-center" style="padding-right: 1rem; ">
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">número:*
-                                </h6>
-                                <input id="numero" type="number" class="form-control password" placeholder="3345"
-                                    name="numero" value="{{ old('numero') }}"  autocomplete="numero">
-                            </div>
-                            <div class="col-sm-4 text-center">
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Piso:
-                                </h6>
-                                <input id="piso" type="text" class="form-control password" placeholder="8" name="piso"
-                                    value="{{ old('piso') }}" autocomplete="piso">
-                            </div>
-                            <div class="col-sm-4 text-center" >
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Dpto:
-                                </h6>
-                                <input id="dpto" type="text" class="form-control password" placeholder="A" name="dpto"
-                                    value="{{ old('dpto') }}" autocomplete="dpto">
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-sm-12 mx-auto">
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Provincia:*
-                                </h6>
-                                <input id="provincia" type="text" class="form-control email-login" placeholder="Mendoza"
-                                    name="provincia" value="{{ old('provincia') }}" 
+                                <input id="hidden" type="hidden" class="form-control password" placeholder="3345"
+                                    name="numero" value="11111"  autocomplete="numero">
+                            
+                                <input id="piso" type="hidden" class="form-control password" placeholder="8" name="piso"
+                                    value="0000" autocomplete="piso">
+                            
+                                <input id="dpto" type="hidden" class="form-control password" placeholder="A" name="dpto"
+                                    value="00" autocomplete="dpto">
+                          
+                                <input id="provincia" type="hidden" class="form-control email-login" placeholder="Mendoza"
+                                    name="provincia" value="CompraUnica" 
                                     autocomplete="provincia">
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-sm-12 mx-auto" >
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Localidad:*
-                                </h6>
-                                <input id="localidad" type="text" class="form-control email-login" placeholder="Maipú"
-                                    name="localidad" value="{{ old('localidad') }}" 
+                           
+                                <input id="localidad" type="hidden" class="form-control email-login" placeholder="Maipú"
+                                    name="localidad" value="CompraUnica" 
                                     autocomplete="localidad">
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-sm-12 mx-auto" >
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Código Postal:*
-                                </h6>
-                                <input id="codigoPostal" type="text" class="form-control email-login" placeholder="5515"
-                                    name="codigoPostal" value="{{ old('codigoPostal') }}" 
+                        
+                                <input id="codigoPostal" type="hidden" class="form-control email-login" placeholder="5515"
+                                    name="codigoPostal" value="0000" 
                                     autocomplete="codigoPostal" >
-                            </div>
-                        </div>
-                        <!--<div class="row mt-3">
-                            <div class="col-sm-12 mx-auto" >
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Teléfono de Contacto:
-                                </h6>
-                                <input id="telContacto" type="text" class="form-control email-login"
-                                    placeholder="(261)2128105" name="telContacto" value="{{ old('telContacto') }}"
-                                    required autocomplete="telContacto">
-                            </div>
-                        </div>-->
-                        <div class="row mt-3 mb-3">
-                            <div class="col-sm-12 mx-auto" >
-                                <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Alguna referencia:
-                                </h6>
-                                <input id="referencia" type="text" class="form-control email-login"
+                            
+                       
+                                <input id="referencia" type="hidden" class="form-control email-login"
                                     placeholder="Es el porton negro" name="referencia"
-                                    value="{{ old('referencia') }}" autocomplete="referencia">
-                            </div>
-                        </div>
-                    </div>
-                    @endif
+                                    value="CompraUnica" autocomplete="referencia">
+                           
                         <div class="row mt-3">
                             <div class="col-sm-12 mx-auto" >
                                 <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Algunas Observaciones:
+                                            0%; padding-left: 3%; color:##ff5765;">Algunas Observaciones:
                                 </h6>
                                 <input id="observaciones" type="text" class="form-control email-login"
                                     placeholder="" name="observaciones"
@@ -175,14 +84,13 @@
                             </div>
                         </div>
                         <div class="row mt-3">
-                            <label for="select" style="color: #af3636;">Modo
+                            <label for="select" style="color: ##ff5765;">Modo
                                 de Pago:*</label>
                             <select class="form-control" id="pago" style="border-top: none !important;
                             border-right: none;
                             border-left: none;" name="pago[]" required>
                                 <option value="">Elegir</option>
                                 <option value="transferencia">Transferencia</option>
-                                <option value="mercadoPago">Mercado Pago</option>
                                 <option value="efectivo">Efectivo</option>
                             </select>
                         </div>
@@ -192,9 +100,9 @@
             </div>
             <div class="d-grid gap-2">
                 <button type="button" value="Enviar" onclick="valida_envia()" class="btn btn-danger mt-5" 
-                style="border-radius:50px; background: #af3636;">Confirmar</button>
+                style="border-radius:50px; background: ##ff5765;">Confirmar</button>
                 <button class="btn btn-danger mt-2" onclick="volver_catalogo()"
-                style="border-radius:50px; background: #af3636;">Volver</button>
+                style="border-radius:50px; background: ##ff5765;">Volver</button>
 
                 <!--Funcion para avisar y validar que los input esten completos y volver atras-->
                 <script>
@@ -237,7 +145,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title text-center">Detalle del pedido</h5>
-                            <button type="button" class="btn-close text-reset " style="color:#af3636 !important;" data-bs-dismiss="modal"
+                            <button type="button" class="btn-close text-reset " style="color:##ff5765 !important;" data-bs-dismiss="modal"
                             aria-label="Close" name="Close"></button>
                         </div>
                         <div class="modal-body p-0">
@@ -254,7 +162,7 @@
                                             </div>
                                         <div class="d-flex">
                                             <div class="col-auto mx-auto">
-                                            <h6 style="color: #af3636;"> Subtotal:
+                                            <h6 style="color: ##ff5765;"> Subtotal:
                                                 ${{ $articulo->precio }},00</h6>
                                             </div>
                                         </div>
@@ -262,21 +170,21 @@
                                     @endforeach
                                     </ul>
                                     @if($retiroBodega == "retiroBodega")
-                                    <div style="border: #af3636 2px solid;">
+                                    <div style="border: ##ff5765 2px solid;">
                                         <h5 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">Retirar en Bodega <br></h5>
+                                            0%; padding-left: 3%; color:##ff5765;">Retirar en Bodega <br></h5>
                                         <p class="text-sm mt-0 mb-0" style="text-align: left; margin-bottom:
                                             0%; padding-left: 3%; color:#000;">Dirrecion: Pje. Scaramella 500, Russell, Mendoza</p>
                                     </div>
                                     @else
-                                    <div style="border: #af3636 2px solid;">
+                                    <div style="border: ##ff5765 2px solid;">
                                         <h6 style="text-align: left; margin-bottom:
-                                            0%; padding-left: 3%; color:#af3636;">El pedido se envia a domicilio</h6>
+                                            0%; padding-left: 3%; color:##ff5765;">Envio a Coordinar</h6>
                                     </div>
                                     @endif
                                     <div class="text-center">
                                         <button type="submit" name="unica" value="unica" class="btn btn-danger mt-5"
-                                            style="border-radius:50px; background: #af3636;">Pagar $ {{ $precio }},00 </button>
+                                            style="border-radius:50px; background: ##ff5765;">Pagar $ {{ $precio }},00 </button>
                                     </div>
                                 </div>
                             </div>

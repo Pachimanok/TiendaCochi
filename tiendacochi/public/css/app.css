@@ -46,14 +46,14 @@ canvas.barras{
     border-radius:50px;
     width: 75%; 
     border-color: aliceblue;
-    background: #af3636;
+    background: ##ff5765;
     color: white;
   }
   a.btn-login{
     border-radius:50px;
     width: 75%; 
     border-color: aliceblue;
-    background: #af3636;
+    background: ##ff5765;
     color: white;
   }
   a.btn-forgot-password{
@@ -73,7 +73,7 @@ canvas.barras{
     text-align: left;
     margin-bottom: 0%;
     /* padding-left: 3%; */
-    color: #af3636;
+    color: ##ff5765;
     font-size: small;
   }
 

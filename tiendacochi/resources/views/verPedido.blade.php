@@ -58,7 +58,7 @@
         </div>
     </div>
     <button class="btn btn-danger mt-2 ms-5" onclick="volver_catalogo()"
-                    style="border-radius:50px; background: #af3636;">Volver</button>
+                    style="border-radius:50px; background: ##ff5765;">Volver</button>
                     <script>function volver_catalogo(){
                         window.history.back();
                     }</script>

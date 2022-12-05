@@ -21,7 +21,7 @@
 
         <div class="d-grid gap-2">
             <a href="principal.html" class="btn btn-danger mt-5"
-                style="border-radius:50px; background: #af3636;">Inicio</a>
+                style="border-radius:50px; background: ##ff5765;">Inicio</a>
         </div>
 
 
@@ -35,7 +35,7 @@
     <div class="offcanvas-header">
 
         <button type="button" class="btn-close text-reset"
-            style="color:#af3636 !important;"
+            style="color:##ff5765 !important;"
             data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
@@ -48,7 +48,7 @@
                         height:
                         4rem;">
                     <h6 class="mb-0"
-                        style="color:#af3636;margin-top:
+                        style="color:##ff5765;margin-top:
                         4px;"> Juanjo Diaz</h6>
                     <p class="text-secondary" style="font-size:
                         small;">juanjo@gmail.com</p>

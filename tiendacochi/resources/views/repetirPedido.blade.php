@@ -45,7 +45,7 @@
                             </div>
                             <div class="d-flex">
                                 <div class="col-auto mx-auto">
-                                    <h6 style="color: #af3636;"> Subtotal:
+                                    <h6 style="color: ##ff5765;"> Subtotal:
                                         $ {{  $pedido->precio * $dto * $pedido->cantidad }}.00</h6>
                                 </div>
                             </div>
@@ -55,7 +55,7 @@
                             @method('PUT')
                             @csrf
                                 <div class="row mt-5">
-                                    <label for="select" style="color: #af3636;">Datos
+                                    <label for="select" style="color: ##ff5765;">Datos
                                         de facturacion:</label>
                                     <select class="form-control" id="campo"
                                         style="border-top: none !important;
@@ -68,7 +68,7 @@
                                     </select>
                                 </div>
                                 <div class="row mt-3">
-                                    <label for="select" style="color: #af3636;">Datos
+                                    <label for="select" style="color: ##ff5765;">Datos
                                         de Entrega:</label>
                                     <select class="form-control" id="campo"
                                         style="border-top: none !important;
@@ -81,7 +81,7 @@
                                     </select>
                                 </div>
                                 <div class="row mt-3">
-                                    <label for="select" style="color: #af3636;">Modo
+                                    <label for="select" style="color: ##ff5765;">Modo
                                         de Pago:</label>
                                     <select class="form-control" id="campo"
                                         style="border-top: none !important;
@@ -100,7 +100,7 @@
                 </div>
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-danger mt-5"
-                        style="border-radius:50px; background: #af3636;">Pagar
+                        style="border-radius:50px; background: ##ff5765;">Pagar
                         $ {{ $total }},00 </button>
                 </div>
             </form>
